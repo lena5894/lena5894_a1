@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<title>Web Design University</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="sidebar-Style bar-Style-block w3-blue w3-card animate-Style-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="bar-Style-item w3-button w3-display-bottomleft text-Style-blue"> Close
+    <i class="fa fa-remove"></i>
+  </a> <a href="CS\machine_learning.html" class="bar-Style-item w3-button">Machine Learning</a>
+  <a href="CS\web_design.html" class="bar-Style-item w3-button">Web Design</a>
+  <a href="MATH\calculus.html" class="bar-Style-item w3-button">Calculus</a>
+  <a href="MATH\statistics.html" class="bar-Style-item w3-button">Statistics</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="bar-Style w3-theme-14 w3-left-align">
+  <a class="bar-Style-item w3-button w3-hide-medium w3-hide-large w3-right hover-Style-white w3-theme-14" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="bar-Style-item w3-button w3-blue"><i class="fa fa-home margin-Style-right"></i>WDU</a>
+
+  <!-- Departments Dropdown -->
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Departments <i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content w3-card-4 bar-Style-block">
+      <a href="CS\index.html" class="bar-Style-item w3-button">Computer Science</a>
+      <a href="MATH\index.html" class="bar-Style-item w3-button">Mathematics</a>
+    </div>
+  </div>
+
+  <!-- Courses Dropdown -->
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Courses <i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content w3-card-4 bar-Style-block">
+    </a> <a href="CS\machine_learning.html" class="bar-Style-item w3-button">Machine Learning</a>
+    <a href="CS\web_design.html" class="bar-Style-item w3-button">Web Design</a>
+    <a href="MATH\calculus.html" class="bar-Style-item w3-button">Calculus</a>
+    <a href="MATH\statistics.html" class="bar-Style-item w3-button">Statistics</a>
+    </div>
+  </div>
+  <a href="#" class="bar-Style-item w3-button w3-hide-small w3-right hover-Style-blue" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="bar-Style-block w3-theme-14 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#profs" class="bar-Style-item w3-button">profs</a>
+    <a href="#history" class="bar-Style-item w3-button">history</a>
+    <a href="#tuition" class="bar-Style-item w3-button">Tuition</a>
+    <a href="#contact" class="bar-Style-item w3-button">Contact</a>
+  </div>
+</div>
+
+<!-- Image Header       ** NOTE: MAKE CENTER and Behind "WDU" block-->
+<div class="w3-display-container animate-Style-opacity">
+  <img src="img\homeBackground.png" align="middle" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottommiddle margin-Style-bottom">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme hover-Style-blue" title="Learn to create modals!">Web Design University</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="modal-Style" id="myModal">
+	<!-- Close Modal Button-->
+	<a href="javascript:void(0)" onclick="modal_close()" class="bar-Style-item w3-button w3-display-topright text-Style-white"> <!--Close-->
+	<i class="fa fa-remove"></i>
+	</a>
+  <div class="modal-Style-content w3-card-4 animate-Style-top">
+    <header class="w3-container w3-blue w3-display-container">
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-blue w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>WDU can show you how to make modals like this!</h4>
+    </header>
+    <div class="w3-container">
+      <p>You could add buttons or dropdowns or anything you want here!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-blue"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+
+<script>
+
+
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";}
+
+// Close Modal navigation
+function modal_close() {
+  document.getElementById("myModal").style.display = "none";}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";}
+  else {x.className = x.className.replace(" w3-show", "");}}
+</script>
+
+</body>
+</html>
