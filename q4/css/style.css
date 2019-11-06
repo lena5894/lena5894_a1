@@ -10,14 +10,18 @@
   clear: both;
 }
 
-img{
-  margin-top: 19px;
-  margin-left: 75px;
-  padding-right: 230px;
+.circle {
+    border-radius: 50%;
+    display: inline-block;
 }
-
-img2 {
-  border-radius: 50%;
+.circle img {
+    border-radius: 50%;
+    display: block;
+}
+.background-circle {
+    background-image: url( 'http://lorempixel.com/200/200/cats/' );
+    height: 50px;
+    width: 50px;
 }
 
 h1{
