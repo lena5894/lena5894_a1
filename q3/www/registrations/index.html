@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+<title>FakeChimp</title> <link rel="icon" type="image/x-icon" href="../img/pink_donut_favicon.ico"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/style.css">
+<script src='../js/javaFunctions.js'> </script> <!--References the javascript page-->
+</head>
+
+<body>
+
+    <h1> <hopper> <a><img src="../img/monkey_image.png" alt="monkey_image" width=120px height=120px></a></hopper> Get started with your</h1>
+    <h2> account</h2>
+    <p></p>
+    <h3>  Find your people. Engage your customers. Build your brand. Do it all</h3>
+    <p></p>
+    <h3> with FakeChimp's Marketing Platform. Already have an account? <a href="#"> Log in.</a></h3>
+
+    <!--Form for E-Mail and STUDENT_ID Submission-->
+    <!-- http://cp202-server.appspot.com/order -->
+    <!-- Image Header       ** MAKE CENTER and Behind "WDU" block-->
+<div class="center-position">
+    <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register_with_image" method="post" enctype="multipart/form-data">
+        <!--to populate your order to be passed to the server application-->
+        <input type="hidden" name="student_id" id="student_id" value="139005894">
+        <p> Email </p>
+        <p> <input align="middle" type="text" name="email" id="email"> </p>
+        <p> Description </p>
+        <p> <input type="text" name="description" id="description"> </p>
+        <p> Country </p>
+        <p> <input type="text" name="country" id="country"> </p>
+        <p> Image Upload </p>
+        <p> <input type="file" name="avatarImage" id="avatarImage"> </p>
+        <p> <gsbutton> <input type="submit" value="Getting Started"> <clickgs> By clicking "Getting Started", you are</clickgs>
+        <p> <clickgs> creating a Mailchimp account, and you agree to </clickgs> </p>
+        <p> <clickgs>
+        Mailchimp's <a href="index.html" target="_blank">Terms of Use</a> and <a href="index.html" target="_blank">Privacy Policy</a>.</clickgs> </p></gsbutton>
+
+    </form>
+
+</div>
+
+
+	<!-- Footer -->
+	<footer class="w3-container center-position">
+    <pwd> 2019 All Rights Reserved. FakeChimp is a registered trademark of WLUCP202 Class</pwd>
+	</footer>
+
+</body>
+
+</html>

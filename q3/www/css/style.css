@@ -195,6 +195,7 @@ a:hover {
 .white,.hover-white:hover{color:#fff!important;background-color:#ffffff!important}
 
 /*For Dealing with a variety of Technology Types/ Screen Sizes*/
+/*For Dealing with a variety of Technology Types/ Screen Sizes*/
 /*For Determing this medium is a LAPTOP*/
 @media (min-width:601px){.col-Style.m1{width:8.33333%}.col-Style.m2{width:16.66666%}.col-Style.m3,.w3-quarter{width:24.99999%}.col-Style.m4,.w3-third{width:33.33333%}.w3-half{width:50%}
 .col-Style.m5{width:41.66666%}.col-Style.m6,.w3-half{width:49.99999%}.col-Style.m7{width:58.33333%}.col-Style.m8,.w3-twothird{width:66.66666%}

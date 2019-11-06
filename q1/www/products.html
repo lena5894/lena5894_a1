@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-<title>Super Donut</title> <link rel="icon" type="image/x-icon" href="img/pink_donut_favicon.ico"/>
+<title>Super Donut - Products</title> <link rel="icon" type="image/x-icon" href="img/pink_donut_favicon.ico"/>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css">
@@ -10,6 +10,7 @@
 <script src='js/cart.js'> </script> <!--References the javascript page-->
 <script src='js/checkout.js'> </script> <!--References the javascript page-->
 <script src='js/validate.js'> </script> <!--References the javascript page-->
+
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -20,9 +21,7 @@
 
 <!-- YOU MUST MODIFY THIS VALUE TO POINT TO YOUR ACTUAL CHECKOUT PAGE -->
 <script>localStorage.checkoutURL = 'checkout.html';</script>
-
 <div id="cp202-cart"></div>
-
 </head>
 
 
@@ -51,16 +50,27 @@
   <!-- Image Header       ** MAKE CENTER and Behind "WDU" block-->
   <div class="center-position">
     <div class="w3-container w3-display-bottommiddle margin-Style-bottom">
-      <a href="index.html" class="Button-1 xlarge-font hover-blue">Super Donut</a>
+      <a href="#" class="Button-1 xlarge-font hover-blue">Products</a>
     </div>
   </div>
 
 <!-- Tables; Includes NON-OS Fonts -->
 <div class="center-position">
+<div class="w3-half">
   <ul class="w3-ul">
-  <li><cp202-a1-serif ><a href="products.html" class="Button-1 blue">Products</a> </cp202-a1-serif></li>
-  <a href="alpha/index.html"><img src="img/Donut Shop.jpg" alt="Donut Shop" width=100% height=500px></a>
+  <li class="theme-background"><h1>ALPHA Donut</h1></li>
+  <a href="alpha/index.html"><img src="img/pink_donut.png" alt="Pink Donut" width=50% height=325px></a>
+  <li><cp202-a1-serif ><a href="#" onclick="clientAddItemToCart({prodName: 'Alpha Donut', prodDesc: 'Great donut', prodPrice: '5.99', prodQty: '1'});" class="Button-1 blue">Add DONUT!</a> </cp202-a1-serif></li>
   </ul>
+</div>
+
+<div class="w3-half">
+  <ul class="w3-ul">
+  <li class="theme-background"><h1>BETA Donut</h1></li>
+  <a href="beta/index.html"><img src="img/blue_donut.png" alt="Blue Donut" width=50% height=325px></a>
+  <li><cp202-a1-serif ><a href="#"  onclick="clientAddItemToCart({prodName: 'Beta Donut', prodDesc: 'Great donut', prodPrice: '4.99', prodQty: '1'});" class="Button-1 blue">Add DONUT!</a> </cp202-a1-serif></li>
+  </ul>
+</div>
 </div>
 
 </body>

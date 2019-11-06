@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Checkout</title> <link rel="icon" type="image/x-icon" href="img/pink_donut_favicon.ico"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<script src='js/javaFunctions.js'> </script> <!--References the javascript page-->
+<script src='js/cart.js'> </script> <!--References the javascript page-->
+<script src='js/checkout.js'> </script> <!--References the javascript page-->
+<script src='js/validate.js'> </script> <!--References the javascript page-->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="http://wlu-cp202.appspot.com/CP202/Fall2019/shopping_cart_v1/checkout.js" async></script>
+
+<script>localStorage.checkoutURL = 'checkout.html';</script>
+<div id="cp202-cart"></div>
+<!--Add Item to Cart-->
+
+</head>
+
+<body>
+
+    <h1> CHECKOUT </h1>
+
+	<!-- Navbar -->
+	<div class="top-position">
+	 <div class="left-position-align">
+	  <a class="Button-1 w3-right" href="javascript:void(0);" onclick="openNav()"></a>
+	  <a href="index.html" class=" Button-1">SD</a>
+
+	  <!-- Dropdown Departments-->
+		<div class="dropdown-hover">
+		<a class="Button-1">Donuts</a>
+		<div class="dropdown-content">
+      <a href="alpha/index.html" class="Button-1">ALPHA Donut</a>
+      <a href="beta/index.html" class="Button-1">BETA Donut</a>
+      <a href="products.html" class="bar-Style-item Button-1">Products</a>
+		</div>
+	  </div>
+
+	 </div>
+	 </div>
+
+		<!-- Tables ; Includes NON-OS Fonts-->
+		<div class="center-position" id="pricing">
+		<div class="w3-quarter">
+		  <ul class="w3-ul">
+      <img src="img/pink_donut.png" alt="Pink Donut" width=100% height=350px>
+		  </ul>
+		</div>
+    <div class="w3-quarter">
+		  <ul class="w3-ul">
+      <img src="img/blue_donut.png" alt="Blue Donut" width=100% height=350px>
+		  </ul>
+		</div>
+
+
+		<div class="w3-half">
+		  <ul class="w3-ul">
+			<li class="theme-background"><h1>Pay & ENJOY !</h1></li>
+		  </ul>
+		</div>
+		</div>
+
+
+    <!--Form for E-Mail and STUDENT_ID Submission-->
+    <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/order" method="post">
+        <!--to populate your order to be passed to the server application-->
+        <p> <input type="hidden" name="order_json" id="order_json" value=""> </p>
+        <p> <input type="hidden" name="student_id" id="student_id" value="139005894"> </p>
+        <p> <input type="submit" onclick="myFunction()" value="Buy Now"> <br></p>
+    </form>
+
+
+	<!-- Footer -->
+	<footer class="w3-container center-position">
+	  <p>Powered by <a href="index.html" target="_blank">Super Donut</a></p>
+	</footer>
+
+</body>
+
+</html>

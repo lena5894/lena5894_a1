@@ -1,0 +1,248 @@
+/*CSS For Web Design University*/
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Proza+Libre);
+
+
+
+/* This changes everything inside the body tag. */
+body {
+margin:0 /*Adjust Header Background Image to Screen Size*/
+font-family: "Times New Roman", Monaco, monospace;
+font-size: 18px;
+font-weight: normal;
+background-color:rgb(255, 255, 71); /*Yellow*/
+text-align: center;
+color: black;
+}
+
+/* This is for Serif fonts. */
+.cp202-a1-serif {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: blue;
+    text-align: center;
+}
+
+/*For Department Bakgrounds*/
+
+#mainDept{
+	width: "width:100% ";
+	margin: 38px auto;
+	height: 80px;
+	background: #f7f7f7;
+	padding: 10px;
+}
+
+h1{
+	text-align: center;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
+	font: 14pt;
+	color: blue;
+}
+
+hr{
+	height: 5px;
+	color: #8b9dc3;
+}
+
+p{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
+	font-size: 12pt;
+	text-align: left;
+  margin-left: 40px;
+  margin-right: 40px;
+	text-indent: 48px;
+	color: #3b5998
+}
+
+
+name {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
+	font-size: 12pt;
+	text-align: left;
+	text-indent: 48px;
+	color:white;
+}
+
+a {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
+	color: #3b5998;
+	text-align: center;
+}
+
+a:hover {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
+  color: blue;
+}
+
+
+
+														/*Class Styles*/
+/*Background Themes & Colours*/
+.theme-background {color:blue !important; background-color:#ffc0cb !important}
+
+/*For Navigation Bar Buttons*/
+.btn-Style,
+.Button-1{border:none;display:inline-block;padding:6px 8px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.btn-Style:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.btn-Style,
+.Button-1{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+
+/*For History Boxes*/
+.w3-ul{list-style-type:none;padding:0;margin:0}.w3-ul li{padding:2px 16px;border-bottom:0px solid #8b9dc3}.w3-ul li:last-child{border-bottom:none}
+/*For Pushing Image Down behind Modal*/
+.w3-display-container{position:relative}
+.w3-tooltip
+.text{display:none}
+.w3-tooltip:hover
+.text{display:inline-block}
+/*Drop-Down*/
+.dropdown-click,
+.dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.dropdown-hover:hover
+.dropdown-content{display:block}
+.dropdown-hover:first-child,
+.dropdown-click:hover{background-color:#ffffff;color:#ffffff}
+.dropdown-hover:hover > .Button-1:first-child,
+.dropdown-click:hover > .Button-1:first-child{background-color:#8b9dc3;color:#8b9dc3}
+.dropdown-content{cursor:auto;color:#ffffff;background-color:#8b9dc3;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+
+/*Sidebar*/
+.sidebar-Style{height:100%;width:200px;background-color:#8b9dc3;position:fixed!important;z-index:1;overflow:auto}
+.dropdown-hover
+.Button-1,
+.dropdown-click
+.Button-1{width:100%;text-align:left;padding:8px 16px}
+.bar-Style-block
+.bar-Style-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.bar-Style-block.center-position .bar-Style-item{text-align:center}.w3-block{display:block;width:100%}
+
+/* Modal */
+.modal-Style{z-index:3;display:none;padding-top:150px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(1,1,1);background-color:rgba(0,0,0,0.3)} /*For Background color change*/
+.modal-Style-content{margin:auto;background-color:#ffffff;position:relative;padding:0;outline:0;width:600px}
+
+/*Department Page Chart*/
+.col-Style,.w3-half,.w3-third,.w3-twothird,.w3-threequarter,.w3-quarter{float:left;width:100%}
+.col-Style.m5{width:41.66666%}.col-Style.m6,.w3-half{width:49.99999%}.col-Style.m7{width:58.33333%}.col-Style.m8,.w3-twothird{width:66.66666%}
+
+
+/*Object Positioning*/
+.top-position,
+.bottom-position{position:fixed;width:100%;z-index:1}.top-position{top:0}.bottom-position{bottom:0}
+.topleft-position{position:absolute;left:0;top:0}.w3-display-topright{position:absolute;right:0;top:0}
+.bottomleft-position{position:absolute;left:0;bottom:0}.w3-display-bottomright{position:absolute;right:0;bottom:0}
+.bottommiddle-position{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.left-position{float:left!important}.w3-right{float:right!important} /*Dropdown Positioning*/
+
+/*Font Size*/
+.xlarge-font{font-size:48px!important}
+
+/*Font Alignment*/
+.left-position-align{text-align:left!important}
+.center-position{text-align:center!important}
+
+/*Margins*/
+.margin-Style{margin:16px!important}.margin-Style-top{margin-top:16px!important}.margin-Style-bottom{margin-bottom:16px!important}
+
+/*Transparent OR Colour Change Hovering*/
+.hover-theme:hover {color:#fff !important; background-color:#000000 !important}
+.blue,.hover-blue:hover{color:#fff!important;background-color:#8b9dc3!important}
+.white,.hover-white:hover{color:#fff!important;background-color:#ffffff!important}
+
+/* Modal */
+.modal-Style{z-index:3;display:none;padding-top:150px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(1,1,1);background-color:rgba(0,0,0,0.3)} /*For Background color change*/
+.modal-Style-content{margin:auto;background-color:#ffffff;position:relative;padding:0;outline:0;width:600px}
+
+/*For Dealing with a variety of Technology Types/ Screen Sizes*/
+/*For Determing this medium is a LAPTOP*/
+@media (min-width:601px){.col-Style.m1{width:8.33333%}.col-Style.m2{width:16.66666%}.col-Style.m3,.w3-quarter{width:24.99999%}.col-Style.m4,.w3-third{width:33.33333%}.w3-half{width:50%}
+.col-Style.m5{width:41.66666%}.col-Style.m6,.w3-half{width:49.99999%}.col-Style.m7{width:58.33333%}.col-Style.m8,.w3-twothird{width:66.66666%}
+.col-Style.m9,.w3-threequarter{width:74.99999%}.col-Style.m10{width:83.33333%}.col-Style.m11{width:91.66666%}.col-Style.m12{width:99.99999%}}
+@media (max-width:600px){.modal-Style-content{margin:0 10px;width:auto!important}.modal-Style{padding-top:30px}
+.w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{position:relative}
+.w3-hide-small{display:none!important}.w3-mobile{display:block;width:100%!important}.bar-Style-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
+.w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .btn-Style,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .btn-Style,.w3-dropdown-click.w3-mobile .w3-button{width:100%}}
+@media (max-width:768px){.modal-Style-content{width:500px}.modal-Style{padding-top:50px}}
+@media (min-width:993px){.modal-Style-content{width:900px}.w3-hide-large{display:none!important}.sidebar-Style.col-Stylelapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}}
+@media (max-width:992px){.sidebar-Style.col-Stylelapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}.w3-auto{max-width:100%}}
+
+
+/* <CHECKOUT_CART> */
+.item {
+  background: red !important;
+  color: green !important;
+}
+
+#item-name {
+  color: white;
+}
+
+#item-description {
+  color: white;
+}
+
+#item-quantity {
+  color:white;
+}
+
+#item-price {
+  color:white;
+}
+
+#item-quantity {
+  color:white;
+}
+
+#cart-total {
+  background: red;
+}
+
+#cart-total-subtotal {
+  color:white;
+}
+
+#cart-total-hst {
+  color: white;
+}
+
+#cart-total-amount {
+  color:white;
+}
+
+.white-text {
+  color:white;
+}
+/* </CHECKOUT_CART> */
+
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+@import url(http://fonts.googleapis.com/css?family=Proza+Libre);
+
+
+fieldset {
+  border: 1px solid skyblue;
+}
+
+input[type=submit] {
+  font-family: "Proza Libre";
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.2em;
+  border: none;
+  background-color: #428bca;
+  margin: 4px 2px;
+  padding: 4px 16px;
+}
+
+input[type=text], input[type=tel], input[type=date], input[type=password], select, textarea {
+  font-family: "Proza Libre";
+  font-size: 1em;
+}
+
+xmp {
+  font-size: 14px;
+}
