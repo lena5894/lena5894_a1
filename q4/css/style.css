@@ -1,3 +1,8 @@
+@media screen and (max-width:1000px) {
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
 .column {
   float: left;
   width: 33.33%;
@@ -72,18 +77,87 @@ a:hover {
 	font-family:"Verdana";
   color: blue;
 }
+}
 
-/*For Dealing with a variety of Technology Types/ Screen Sizes*/
-/*For Dealing with a variety of Technology Types/ Screen Sizes*/
-/*For Determing this medium is a LAPTOP*/
-@media (min-width:601px){.col-Style.m1{width:8.33333%}.col-Style.m2{width:16.66666%}.col-Style.m3,.w3-quarter{width:24.99999%}.col-Style.m4,.w3-third{width:33.33333%}.w3-half{width:50%}
-.col-Style.m5{width:41.66666%}.col-Style.m6,.w3-half{width:49.99999%}.col-Style.m7{width:58.33333%}.col-Style.m8,.w3-twothird{width:66.66666%}
-.col-Style.m9,.w3-threequarter{width:74.99999%}.col-Style.m10{width:83.33333%}.col-Style.m11{width:91.66666%}.col-Style.m12{width:99.99999%}}
-@media (max-width:600px){.modal-Style-content{margin:0 10px;width:auto!important}.modal-Style{padding-top:30px}
-.w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{position:relative}
-.w3-hide-small{display:none!important}.w3-mobile{display:block;width:100%!important}.bar-Style-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
-.w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .btn-Style,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .btn-Style,.w3-dropdown-click.w3-mobile .w3-button{width:100%}}
-@media (max-width:768px){.modal-Style-content{width:500px}.modal-Style{padding-top:50px}}
-@media (min-width:993px){.modal-Style-content{width:900px}.w3-hide-large{display:none!important}.sidebar-Style.col-Stylelapse{display:block!important}}
-@media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}}
-@media (max-width:992px){.sidebar-Style.col-Stylelapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}.w3-auto{max-width:100%}}
+
+
+@media screen and (max-width:999px) {
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.circle {
+    border-radius: 50%;
+    display: inline-block;
+}
+.circle img {
+    border-radius: 50%;
+    display: block;
+}
+.background-circle {
+    background-image: url( 'http://lorempixel.com/200/200/cats/' );
+    height: 50px;
+    width: 50px;
+}
+
+h1{
+	text-align: left;
+	font-family: "Verdana";
+	font: 28pt;
+  margin-top: 50px;
+  margin-left: 50px;
+	color: black;
+}
+h2{
+	text-align: center;
+	font-family: "Verdana";
+	font: 14pt;
+	color: black;
+}
+h3{
+	text-align: left;
+	font-family: "Verdana";
+	font: 14pt;
+	color: black;
+  margin-left: 520px;
+  margin-right: 100px;
+}
+
+hr{
+  text-align: center;
+	height: 5px;
+	color: black;
+}
+
+p{
+  text-align: center;
+	font-family:"Verdana";
+	font-size: 14pt;
+	text-align: left;
+	color: black
+}
+
+
+a {
+	font-family:"Verdana";
+	color: #3b5998;
+	text-align: center;
+}
+
+a:hover {
+	font-family:"Verdana";
+  color: blue;
+}
+}
